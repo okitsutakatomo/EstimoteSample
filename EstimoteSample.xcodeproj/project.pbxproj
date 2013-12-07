@@ -21,6 +21,10 @@
 		0381F6331853828C00C19E6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0381F6151853828C00C19E6E /* UIKit.framework */; };
 		0381F63B1853828C00C19E6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0381F6391853828C00C19E6E /* InfoPlist.strings */; };
 		0381F63D1853828C00C19E6E /* EstimoteSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0381F63C1853828C00C19E6E /* EstimoteSampleTests.m */; };
+		0381F64E185382AF00C19E6E /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0381F64D185382AF00C19E6E /* libEstimoteSDK.a */; };
+		0381F650185383DA00C19E6E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0381F64F185383DA00C19E6E /* CoreBluetooth.framework */; };
+		0381F652185383E200C19E6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0381F651185383E200C19E6E /* CoreLocation.framework */; };
+		0381F654185383F100C19E6E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0381F653185383F100C19E6E /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		0381F6381853828C00C19E6E /* EstimoteSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EstimoteSampleTests-Info.plist"; sourceTree = "<group>"; };
 		0381F63A1853828C00C19E6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0381F63C1853828C00C19E6E /* EstimoteSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstimoteSampleTests.m; sourceTree = "<group>"; };
+		0381F648185382AF00C19E6E /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		0381F649185382AF00C19E6E /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		0381F64A185382AF00C19E6E /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		0381F64B185382AF00C19E6E /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		0381F64C185382AF00C19E6E /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		0381F64D185382AF00C19E6E /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		0381F64F185383DA00C19E6E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0381F651185383E200C19E6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0381F653185383F100C19E6E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0381F654185383F100C19E6E /* SystemConfiguration.framework in Frameworks */,
+				0381F652185383E200C19E6E /* CoreLocation.framework in Frameworks */,
+				0381F650185383DA00C19E6E /* CoreBluetooth.framework in Frameworks */,
 				0381F6141853828C00C19E6E /* CoreGraphics.framework in Frameworks */,
 				0381F6161853828C00C19E6E /* UIKit.framework in Frameworks */,
+				0381F64E185382AF00C19E6E /* libEstimoteSDK.a in Frameworks */,
 				0381F6121853828C00C19E6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +103,7 @@
 				0381F6361853828C00C19E6E /* EstimoteSampleTests */,
 				0381F6101853828C00C19E6E /* Frameworks */,
 				0381F60F1853828C00C19E6E /* Products */,
+				0381F646185382AF00C19E6E /* EstimoteSDK */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +119,9 @@
 		0381F6101853828C00C19E6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0381F653185383F100C19E6E /* SystemConfiguration.framework */,
+				0381F651185383E200C19E6E /* CoreLocation.framework */,
+				0381F64F185383DA00C19E6E /* CoreBluetooth.framework */,
 				0381F6111853828C00C19E6E /* Foundation.framework */,
 				0381F6131853828C00C19E6E /* CoreGraphics.framework */,
 				0381F6151853828C00C19E6E /* UIKit.framework */,
@@ -150,6 +171,27 @@
 				0381F6391853828C00C19E6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0381F646185382AF00C19E6E /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0381F647185382AF00C19E6E /* Headers */,
+				0381F64D185382AF00C19E6E /* libEstimoteSDK.a */,
+			);
+			path = EstimoteSDK;
+			sourceTree = "<group>";
+		};
+		0381F647185382AF00C19E6E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0381F648185382AF00C19E6E /* ESTBeacon.h */,
+				0381F649185382AF00C19E6E /* ESTBeaconDefinitions.h */,
+				0381F64A185382AF00C19E6E /* ESTBeaconManager.h */,
+				0381F64B185382AF00C19E6E /* ESTBeaconRegion.h */,
+				0381F64C185382AF00C19E6E /* ESTBeaconUpdateInfo.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +423,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EstimoteSample/EstimoteSample-Prefix.pch";
 				INFOPLIST_FILE = "EstimoteSample/EstimoteSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/okitsu.takatomo/Documents/workspace/EstimoteSample/EstimoteSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +440,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EstimoteSample/EstimoteSample-Prefix.pch";
 				INFOPLIST_FILE = "EstimoteSample/EstimoteSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/okitsu.takatomo/Documents/workspace/EstimoteSample/EstimoteSDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
